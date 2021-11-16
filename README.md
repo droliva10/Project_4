@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
  ![Diagram](Diagram/Azure_Diagram_Project_4.png)
 
 
-## [Azure](https://azure.microsoft.com/en-us/)
+## [**Azure**](https://azure.microsoft.com/en-us/)
 
 *VM Specifications*
  - Linux (ubuntu 20.04) Operating System
@@ -17,7 +17,7 @@ The files in this repository were used to configure the network depicted below.
  
 These downloads have been tested and used to generate a live Splunk Enterprise deployment on Azure. They can be used to either recreate the deployment pictured above.
 
-***[Splunk](https://www.splunk.com/)***
+[**Splunk**](https://www.splunk.com/)
 
 [**Splunk Enterprise**](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 
