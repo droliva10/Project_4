@@ -17,7 +17,7 @@ The files in this repository were used to configure the network depicted below.
  
 These downloads have been tested and used to generate a live Splunk Enterprise deployment on Azure. They can be used to either recreate the deployment pictured above.
 
-[**Splunk**](https://www.splunk.com/)
+[# Splunk](https://www.splunk.com/)
 
 [**Splunk Enterprise**](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 
@@ -95,7 +95,7 @@ Run `sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://downloa
 -
 Run `sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
-[Splunk Enterprise Extraction](Images/Splunk_Enterprise_Extract.png)
+[***Splunk Enterprise Extraction***](Images/Splunk_Enterprise_Extract.png)
 
 *Commands*
 -
