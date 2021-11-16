@@ -69,7 +69,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump-box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address: My personal IP address
 -  Whitelisted (Personal IP address)
 
-Machines within the network can only be accessed by the Jump-box through the control nose and a shell.
+Machines within the network can only be accessed by the Jump-box through the control node SSH connection.
 
 - I have allowed Kirk  (Jump-box) access to the Back-end Server Pool and Splunk Enterprise.
 
