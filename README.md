@@ -126,7 +126,7 @@ Run `./splunk restart`
 ## Azure Network Security Group
 #
 Add inbound security rule
-Allow [port 8000](Images/Azure_NSG_port_8000)
+Allow [port 8000](Images/Azure_NSG_port_8000.png)
 
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running and operational.
 
