@@ -85,7 +85,7 @@ A summary of the access policies in place can be found in the table below.
 #
 Be sure to navigate to the /opt directory on the VM where the Splunk Enterprise instance is to be installed.
 
-**Download**
+*Download*
 -
 Run `sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/splunk/releases/8.2.3/linux/splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
 
@@ -184,7 +184,7 @@ Than run `sudo ./splunk restart`
 
 [Add Monitor](Images/Add_Monitor.png)
 
-##Data Verification
+## Data Verification
 #
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running, and monitoring the Virtual Network.
 
