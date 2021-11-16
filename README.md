@@ -156,13 +156,13 @@ Navigate to the /opt directory on the VM that Splunk Universal Forwarder is to b
 -
 Run `sudo wget -O splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/universalforwarder/releases/8.2.3/linux/splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
 
-[Splunk Universal Forwarder](Images/Splunk_Universal_Forwarder.png)
+### [***Splunk Universal Forwarder***](Images/Splunk_Universal_Forwarder.png)
 
 *Extract*
 -
 Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
-[Splunk Universal Forwarder Extraction](Images/Splunk_Universal_Forwarder_Extraction)
+### [***Splunk Universal Forwarder Extraction***](Images/Splunk_Universal_Forwarder_Extraction.png)
 
 *Commands*
 -
@@ -178,11 +178,11 @@ Next run `sudo .splunk add monitor /var/log/`
 
 Than run `sudo ./splunk restart`
 	
-[Start](Splunk_Universal_Forwarder_Start)
+### [***Start***](Splunk_Universal_Forwarder_Start.png)
 
-[Add and Set Forwarder](Images/Add_and_Set_Forwarder.png)
+### [***Add and Set Forwarder***](Images/Add_and_Set_Forwarder.png)
 
-[Add Monitor](Images/Add_Monitor.png)
+### [***Add Monitor***](Images/Add_Monitor.png)
 
 ## Data Verification
 #
