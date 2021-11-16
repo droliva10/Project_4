@@ -46,7 +46,7 @@ This document contains the following details:
 ## Description of the Topology
 #
 
-The main purpose of this network is to have a secure environment and monitor a Ruby On Rails instance application.
+The main purpose of this network is to have a secure environment and monitor a Ruby On Rails application.
 
 - **Containerization was used to create a control node. This serves the purposed of security, elasticity, and scalability.**
 
