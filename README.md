@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
  ![Diagram](Diagram/Azure_Diagram_Project_4.png)
 
 
-## [**Azure**](https://azure.microsoft.com/en-us/)
+## [# Azure](https://azure.microsoft.com/en-us/)
 
 *VM Specifications*
  - Linux (ubuntu 20.04) Operating System
@@ -95,7 +95,7 @@ Run `sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://downloa
 -
 Run `sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
-[***Splunk Enterprise Extraction***](Images/Splunk_Enterprise_Extract.png)
+### [***Splunk Enterprise Extraction***](Images/Splunk_Enterprise_Extract.png)
 
 *Commands*
 -
