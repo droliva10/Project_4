@@ -21,7 +21,7 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 [**Splunk Enterprise**](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 
-[Splunk Universal Forwarder](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html)
+[**Splunk Universal Forwarder**](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html)
 
 
 
