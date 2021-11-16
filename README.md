@@ -89,7 +89,7 @@ Navigate to the /opt directory on the VM that Splunk Enterprise instance is to b
 -
 Run `sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/splunk/releases/8.2.3/linux/splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
 
-### [***Splunk Enterprise***](images/Splunk_Enterprise.png)
+### [***Splunk Enterprise***](Images/Splunk_Enterprise.png)
 
 *Extract*
 -
