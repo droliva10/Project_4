@@ -21,6 +21,7 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 
 [Splunk Enterprise](https://www.splunk.com/en_us/download/splunk-enterprise.html)
+
 [Universal Forwarder](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html)
 
 
@@ -91,6 +92,7 @@ Run `sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 **Commands**
 -
 Run `cd /opt/splunk/bin`
+
 Run `./splunk start --accept-licences`
 	
 **File Configuration**
@@ -103,12 +105,13 @@ Run `vi ../etc/splunk-launch.conf`
 
 Run `cp /opt/splunk/etc/system/default/web.conf /opt/splunk/etc/system/local`
 
-- Edit [web.conf](Images/Web_File.png)
+Edit [web.conf](Images/Web_File.png)
 
 Run `vi /opt/splunk/etc/system/local/web.conf`
 
-Uncomment *mgmtHostPort=121.0.0.1:8089*
-Edit IP address, it should be the same IP Address as in splunk-launch.conf file.
+- Uncomment *mgmtHostPort=121.0.0.1:8089*
+
+- Edit IP address, it should be the same IP Address as in splunk-launch.conf file.
 	
 Run `./splunk restart`
 
@@ -123,28 +126,32 @@ Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise
 
 ### Splunk Settings
 #
-- First click manage apps, than click Browse more apps.
+First click manage apps, than click Browse more apps.
 
--Search linux
+- Search for Linux apps
 
--Install [Splunk Ad-on for Unix and Linux](Images/Splunk_apps.png)
-- Than click home.
+- Install [Splunk Ad-on for Unix and Linux](Images/Splunk_apps.png)
 
--Click settings drop down.
--Click Forward and receiving
--First, click [Configure receiving](Images/Configure_receiving.png), than click New Recieving Port and enter port 9997.
+Than click home.
 
-### Splunk Universal Forwarder Installation
-#
+Click settings drop down.
+
+Click Forward and receiving.
+
+First, click [Configure receiving](Images/Configure_receiving.png), than click New Recieving Port and enter port 9997.
+
+# Splunk Universal Forwarder Installation
 Be sure to navigate to the /opt directory on the VM where the Splunk Universal Forwarder is to be installed.
-**Download**
 
--Run `sudo wget -O splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/universalforwarder/releases/8.2.3/linux/splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
+**Download**
+-
+Run `sudo wget -O splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/universalforwarder/releases/8.2.3/linux/splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
 
 [Splunk Universal Forwarder](Images/Splunk_Universal_Forwarder.png)
 
 **Extract**
--Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
+-
+Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 [Splunk Universal Forwarder Extraction](Images/Splunk_Universal_Forwarder_Extraction)
 
@@ -161,8 +168,7 @@ Than run `sudo ./splunk restart`
 [Add and Set Forwarder](Images/Add_and_Set_Forwarder.png)
 [Add Monitor](Images/Add_Monitor.png)
 
-### Data Verification
-#
+# Data Verification
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running, and monitoring the Virtual Network.
 
 Click settings drop down:
@@ -172,17 +178,23 @@ Than click Search & Reporting
 Next click [Data Summary](Images/Data_Summary.png)
 
 If you need to troubleshoot connection.
-- Run `sudo ./splunk list forward-server`
+Run `sudo ./splunk list forward-server`
+
 [list forward-server](Images/List_Forward_Server.png)
 #
 Lastly ensure Splunk Enterprise and the Universal Forwarder start on boot.
+
 **Commands**
+-
 *Splunk Enterprise*
 
 Run `sudo ./splunk enable boot-start`
+
 [Splunk Enable](Images/Splunk_Enable.png)
+
 *Splunk Universal Forwarder*
 Run `sudo ./splunk enable boot-start
+
 [Splunk Enable](Images/Forwarder_Enable.png)
 
 
