@@ -19,7 +19,6 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 ***[Splunk](https://www.splunk.com/)***
 
-
 [Splunk Enterprise](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 
 [Universal Forwarder](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html)
@@ -157,27 +156,39 @@ Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 **Commands**
 -
- Run `cd /opt/splunkforwarder/bin`
+Run `cd /opt/splunkforwarder/bin`
+ 
 Next run `sudo ./splunk start --accept-licence`
+
 Next run `sudo ./splunk add forward-server IP Address:9997`
+
 Next run `sudo ./splunk set deploy-poll IP Address:8089`
+
 Next run `sudo .splunk add monitor /var/log/`
+
 Than run `sudo ./splunk restart`
 	
-[start](Splunk_Universal_Forwarder_Start)
+[Start](Splunk_Universal_Forwarder_Start)
+
 [Add and Set Forwarder](Images/Add_and_Set_Forwarder.png)
+
 [Add Monitor](Images/Add_Monitor.png)
 
 # Data Verification
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running, and monitoring the Virtual Network.
 
-Click settings drop down:
+Click settings drop down.
+
 Next click [Forwarder management](Images/Forwarder_Management.png)
+
 Next navigate back to [Splunk Enterprise Home](Images/Splunk_Enterprise_Home.png)
+
 Than click Search & Reporting
+
 Next click [Data Summary](Images/Data_Summary.png)
 
 If you need to troubleshoot connection.
+
 Run `sudo ./splunk list forward-server`
 
 [list forward-server](Images/List_Forward_Server.png)
@@ -193,7 +204,8 @@ Run `sudo ./splunk enable boot-start`
 [Splunk Enable](Images/Splunk_Enable.png)
 
 *Splunk Universal Forwarder*
-Run `sudo ./splunk enable boot-start
+
+Run `sudo ./splunk enable boot-start`
 
 [Splunk Enable](Images/Forwarder_Enable.png)
 
