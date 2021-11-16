@@ -113,7 +113,7 @@ Run `vi ../etc/splunk-launch.conf`
 
 Run `cp /opt/splunk/etc/system/default/web.conf /opt/splunk/etc/system/local`
 
-Edit [web.conf](Images/Web_File.png)
+- Edit [web.conf](Images/Web_File.png)
 
 Run `vi /opt/splunk/etc/system/local/web.conf`
 
