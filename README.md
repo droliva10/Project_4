@@ -1,5 +1,5 @@
 
-# Splunk Security Enterprise Deployment
+# Splunk Enterprise Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 
 ## [Azure](https://azure.microsoft.com/en-us/)
 
-*VM Specification*
+*VM Specifications*
  - Linux (ubuntu 20.04) Operating System
  - 20_04-lts-gen2
  - Standard B1ms
@@ -19,7 +19,7 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 ***[Splunk](https://www.splunk.com/)***
 
-[Splunk Enterprise](https://www.splunk.com/en_us/download/splunk-enterprise.html)
+[**Splunk Enterprise**](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 
 [Splunk Universal Forwarder](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html)
 
