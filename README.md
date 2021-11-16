@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
  ![Diagram](Diagram/Azure_Diagram_Project_4.png)
 
 
-## ![Azure](https://azure.microsoft.com/en-us/)
+## [Azure](https://azure.microsoft.com/en-us/)
 
 *VM Specification*
  - Linux (ubuntu 20.04) Operating System
@@ -17,7 +17,7 @@ The files in this repository were used to configure the network depicted below.
  
 These downloads have been tested and used to generate a live Splunk Enterprise deployment on Azure. They can be used to either recreate the deployment pictured above.
 
-***![Splunk](https://www.splunk.com/)***
+***[Splunk](https://www.splunk.com/)***
 
 
  ![Splunk Enterprise](https://www.splunk.com/en_us/download/splunk-enterprise.html)
@@ -77,23 +77,24 @@ A summary of the access policies in place can be found in the table below.
 Be sure to navigate to the /opt directory on the VM where the Splunk Enterprise instance is to be installed.
 **Download**
 -Run `sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/splunk/releases/8.2.3/linux/splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
-![Splunk Enterprise](images/Splunk_Enterprise.png)
+[Splunk Enterprise](images/Splunk_Enterprise.png)
 **Extract**
 -Run `sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
-![Splunk Enterprise Extraction](Images/Splunk_Enterprise_Extract.png)
+[Splunk Enterprise Extraction](Images/Splunk_Enterprise_Extract.png)
 **Commands**
 	-Run `cd /opt/splunk/bin`
 	-Run `./splunk start --accept-licences`
 	
 **File Configuration**
 
-- Edit ![splunk-launch.conf](Images/Splunk_Launch.png) file to bind IP Address.
+- Edit [splunk-launch.conf](Images/Splunk_Launch.png) file to bind IP Address.
 -Run `vi ../etc/splunk-launch.conf`
 
 - Copy web.conf file. 
 -Run `cp /opt/splunk/etc/system/default/web.conf /opt/splunk/etc/system/local`
 
-- Edit ![web.conf](Images/Web_File.png)
+- Edit [web.conf](Images/Web_File.png)
+
 -Run `vi /opt/splunk/etc/system/local/web.conf`
 	- Uncomment *mgmtHostPort=121.0.0.1:8089*
 	- Edit IP address, it should be the same IP Address as in splunk-launch.conf file.
@@ -102,8 +103,8 @@ Be sure to navigate to the /opt directory on the VM where the Splunk Enterprise 
 ### Azure Network Security Group
 #
 Add inbound security rule
-- Allow ![port 8000](Images/Azure_NSG_port_8000)
-Navigate to the Splunk Enterprise URL ![IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running and operational.
+- Allow [port 8000](Images/Azure_NSG_port_8000)
+Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running and operational.
 
 
 
@@ -111,22 +112,23 @@ Navigate to the Splunk Enterprise URL ![IP Address:8000](Images/Splunk_Enterpris
 #
 - First click manage apps, than click Browse more apps.
 -Search linux
--Install ![Splunk Ad-on for Unix and Linux](Images/Splunk_apps.png)
+-Install [Splunk Ad-on for Unix and Linux](Images/Splunk_apps.png)
 - Than click home.
 -Click settings drop down.
 -Click Forward and receiving
--First, click ![Configure receiving](Images/Configure_receiving.png), than click New Recieving Port and enter port 9997.
+-First, click [Configure receiving](Images/Configure_receiving.png), than click New Recieving Port and enter port 9997.
 
 ### Splunk Universal Forwarder Installation
 #
 Be sure to navigate to the /opt directory on the VM where the Splunk Universal Forwarder is to be installed.
 **Download**
+
 -Run `wget -O splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/universalforwarder/releases/8.2.3/linux/splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
-![Splunk Universal Forwarder](Images/Splunk_Universal_Forwarder.png)
+[Splunk Universal Forwarder](Images/Splunk_Universal_Forwarder.png)
 
 **Extract**
 -Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
-![Splunk Universal Forwarder Extraction](Images/Splunk_Universal_Forwarder_Extraction)
+[Splunk Universal Forwarder Extraction](Images/Splunk_Universal_Forwarder_Extraction)
 
 **Commands**
 	-Run `cd /opt/splunkforwarder/bin`
@@ -136,30 +138,30 @@ Be sure to navigate to the /opt directory on the VM where the Splunk Universal F
 	-Next run `sudo .splunk add monitor /var/log/`
 	-Than run `sudo ./splunk restart`
 	
-![start](Splunk_Universal_Forwarder_Start)
-![Add and Set Forwarder](Images/Add_and_Set_Forwarder.png)
-![Add Monitor](Images/Add_Monitor.png)
+[start](Splunk_Universal_Forwarder_Start)
+[Add and Set Forwarder](Images/Add_and_Set_Forwarder.png)
+[Add Monitor](Images/Add_Monitor.png)
 
 ### Data Verification
 #
-Navigate to the Splunk Enterprise URL ![IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running, and monitoring the Virtual Network.
+Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running, and monitoring the Virtual Network.
 -Click settings drop down.
--Than click ![Forwarder management](Images/Forwarder_Management.png)
--Next navigate back to ![Splunk Enterprise Home](Images/Splunk_Enterprise_Home.png)
+-Than click [Forwarder management](Images/Forwarder_Management.png)
+-Next navigate back to [Splunk Enterprise Home](Images/Splunk_Enterprise_Home.png)
 -Than click Search & Reporting
--Next click ![Data Summary](Images/Data_Summary.png)
+-Next click [Data Summary](Images/Data_Summary.png)
 -If you need to troubleshoot connection.
 - Run `sudo ./splunk list forward-server`
-![list forward-server](Images/List_Forward_Server)
+[list forward-server](Images/List_Forward_Server.png)
 #
 Lastly ensure Splunk Enterprise and the Universal Forwarder start on boot.
 **Commands**
 *Splunk Enterprise*
 -Run `sudo ./splunk enable boot-start`
-![Splunk Enable](Images/Splunk_Enable.png)
+[Splunk Enable](Images/Splunk_Enable.png)
 *Splunk Universal Forwarder*
 -Run `sudo ./splunk enable boot-start
-![Splunk Enable](Images/Forwarder_Enable.png)
+[Splunk Enable](Images/Forwarder_Enable.png)
 
 
 
@@ -168,8 +170,5 @@ Lastly ensure Splunk Enterprise and the Universal Forwarder start on boot.
 The Splunk Universal Forwarder is installed and configured to monitor the following machines:
 - 10.0.0.4
 - 10.0.0.5
-
-
-
 
 
