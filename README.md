@@ -168,17 +168,17 @@ Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 *Commands*
 -
-Run `cd /opt/splunkforwarder/bin`
+First run `cd /opt/splunkforwarder/bin`
  
-Next run `sudo ./splunk start --accept-licence`
+Second run `sudo ./splunk start --accept-licence`
 
-Next run `sudo ./splunk add forward-server IP Address:9997`
+Thrird run `sudo ./splunk add forward-server IP Address:9997`
 
-Next run `sudo ./splunk set deploy-poll IP Address:8089`
+Forth run `sudo ./splunk set deploy-poll IP Address:8089`
 
-Next run `sudo .splunk add monitor /var/log/`
+Fifth run `sudo .splunk add monitor /var/log/`
 
-Than run `sudo ./splunk restart`
+Sixth run `sudo ./splunk restart`
 	
 ### [***Start***](Splunk_Universal_Forwarder_Start.png)
 
