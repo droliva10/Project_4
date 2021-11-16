@@ -83,7 +83,7 @@ A summary of the access policies in place can be found in the table below.
 
 ## Splunk Enterprise Installation
 #
-Be sure to navigate to the /opt directory on the VM where the Splunk Enterprise instance is to be installed.
+Navigate to the /opt directory on the VM that Splunk Enterprise instance is to be installed.
 
 *Download*
 -
@@ -150,7 +150,7 @@ First, click [Configure receiving](Images/Configure_receiving.png), than click N
 
 ## Splunk Universal Forwarder Installation
 #
-Be sure to navigate to the /opt directory on the VM where the Splunk Universal Forwarder is to be installed.
+Navigate to the /opt directory on the VM that Splunk Universal Forwarder is to be installed.
 
 *Download*
 -
