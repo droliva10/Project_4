@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
  ![Diagram](Diagram/Azure_Diagram_Project_4.png)
 
 
-### [**Azure**](https://azure.microsoft.com/en-us/)
+## [**Azure**](https://azure.microsoft.com/en-us/)
 
 *VM Specifications*
  - Linux (ubuntu 20.04) Operating System
