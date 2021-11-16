@@ -126,7 +126,7 @@ Run `./splunk restart`
 ## Azure Network Security Group
 #
 Add inbound security rule to Splunk Enterprise VM.
-Allow [port 8000 and 8089](Images/Azure_NSG_Allow_Port_8000_8089.png)
+Allow [port 8000 and 8089](Images/Azure_NSG_Allow_Port_8000_8089.PNG)
 
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running and operational.
 
