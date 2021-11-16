@@ -28,11 +28,17 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 This document contains the following details:
 
 -Description of the Topology
+
 -Access Policies
+
 -Splunk Enterprise Installation
+
 -Azure Network Security Group
+
 -Splunk Settings
+
 -Splunk Universal Forwarder Installation
+
 -Data Verification
 
 ### Description of the Topology
