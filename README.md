@@ -41,7 +41,7 @@ This document contains the following details:
 
 -Data Verification
 
-### Description of the Topology
+## Description of the Topology
 #
 
 The main purpose of this network is to have a secure environment and monitor a Ruby On Rails instance application.
@@ -61,7 +61,7 @@ The configuration details of each machine may be found below.
 | Spock  | Web Server | 10.0.0.5   | Linux            |
 | Scotty | Splunk     | 10.1.0.4   | Linux            |
 
-### Access Policies
+## Access Policies
 #
 The machines on the internal network are not exposed to the public Internet. 
 Only the Jump-box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address: My personal IP address
@@ -79,7 +79,7 @@ A summary of the access policies in place can be found in the table below.
 | Spock  | No                  | 10.0.0.0-254         |
 | Scotty | No                  | 10.1.0.0-254         |
 
-### Splunk Enterprise Installation
+## Splunk Enterprise Installation
 #
 Be sure to navigate to the /opt directory on the VM where the Splunk Enterprise instance is to be installed.
 
@@ -89,7 +89,7 @@ Run `sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://downloa
 
 [Splunk Enterprise](images/Splunk_Enterprise.png)
 
-**Extract**
+*Extract*
 -
 Run `sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
