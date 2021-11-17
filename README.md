@@ -1,5 +1,5 @@
 
-# Install and Configure Splunk Enterprise.
+# Installed and Configured Splunk Enterprise.
 #
 ![Logo](Images/Logo_2.png)
 
