@@ -1,9 +1,11 @@
 
 # Install Splunk Enterprise and Universal Forwarder
+#
+![Logo](Images/Logo.png)
 
 The files in this repository were used to configure the network depicted below.
 
- ![Diagram](Diagram/Azure_Diagram_Project_4.png)
+ [Diagram](Diagram/Azure_Diagram_Project_4.png)
 
 
 ## [Azure](https://azure.microsoft.com/en-us/)
