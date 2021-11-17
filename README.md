@@ -101,29 +101,29 @@ Run `sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 *Commands*
 -
-Run `cd /opt/splunk/bin`
+Run `sudo cd /opt/splunk/bin`
 
-Run `./splunk start --accept-licences`
+Run `sudo ./splunk start --accept-licences`
 	
 *File Configuration*
 -
 Edit [splunk-launch.conf](Images/Splunk_Launch.png) file to bind IP Address.
 
-Run `vi ../etc/splunk-launch.conf`
+Run `sudo vi ../etc/splunk-launch.conf`
 
 - Copy web.conf file. 
 
-Run `cp /opt/splunk/etc/system/default/web.conf /opt/splunk/etc/system/local`
+Run `sudo cp /opt/splunk/etc/system/default/web.conf /opt/splunk/etc/system/local`
 
 - Edit [web.conf](Images/Web_File.png)
 
-Run `vi /opt/splunk/etc/system/local/web.conf`
+Run `sudo vi /opt/splunk/etc/system/local/web.conf`
 
 - Uncomment *mgmtHostPort=121.0.0.1:8089*
 
 - Edit IP address, it should be the same IP Address as in splunk-launch.conf file.
 	
-Run `./splunk restart`
+Run `sudo ./splunk restart`
 
 ## Azure Network Security Group
 #
@@ -170,7 +170,7 @@ Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 *Commands*
 -
-First run `cd /opt/splunkforwarder/bin`
+First run `sudo cd /opt/splunkforwarder/bin`
  
 Second run `sudo ./splunk start --accept-licence`
 
