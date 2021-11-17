@@ -85,7 +85,7 @@ A summary of the access policies in place can be found in the table below.
 
 ## Splunk Enterprise Installation
 #
-Navigate to the /opt directory on the VM that Splunk Enterprise instance is to be installed.
+_Note: Navigate to the /opt directory on the VM that Splunk Enterprise instance is to be installed.
 
 *Download*
 -
