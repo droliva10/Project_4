@@ -17,7 +17,7 @@ The files in this repository were used to configure the network depicted in the 
  - 1 vCPU
  - 2 GiB RAM
  
-These downloads have been tested and used to generate a live Splunk Enterprise deployment on Azure. They can be used to either recreate the deployment pictured above.
+These downloads have been tested and used to generate a live Splunk Enterprise deployment on Microsofy Azure. They can be used to either recreate the deployment pictured above or variation.
 
 ## [Splunk](https://www.splunk.com/)
 
@@ -127,12 +127,10 @@ Run `./splunk restart`
 
 ## Azure Network Security Group
 #
-Add inbound security rule to Splunk Enterprise VM.
+Add inbound security rules to Splunk Enterprise VM.
 Allow [port 8000 and 8089](Images/Azure_NSG_Allow_Port_8000_8089.PNG)
 
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check that it is running and operational.
-
-
 
 ## Splunk Settings
 #
