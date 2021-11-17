@@ -172,7 +172,7 @@ First run `cd /opt/splunkforwarder/bin`
  
 Second run `sudo ./splunk start --accept-licence`
 
-Thrird run `sudo ./splunk add forward-server IP Address:9997`
+Third run `sudo ./splunk add forward-server IP Address:9997`
 
 Forth run `sudo ./splunk set deploy-poll IP Address:8089`
 
