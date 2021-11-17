@@ -73,7 +73,7 @@ Only the Jump-box machine can accept connections from the Internet. Access to th
 
 Machines within the network can only be accessed by the Jump-box through the control node SSH connection.
 
-- I have allowed Kirk  (Jump-box) access to the Back-end Server Pool and Splunk Enterprise.
+- I have allowed Kirk (Jump-box) access to the Back-end Server Pool and Splunk Enterprise virtual machines.
 
 A summary of the access policies in place can be found in the table below.
 
