@@ -1,5 +1,5 @@
 
-# Install Splunk Enterprise and Universal Forwarder on Microsoft Azure Virtal Network.
+# Install Splunk Enterprise and Universal Forwarder on Microsoft Azure Virtual Network.
 #
 ![Logo](Images/Logo.png)
 
