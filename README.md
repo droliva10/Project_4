@@ -134,27 +134,19 @@ Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise
 
 ## Splunk Settings
 #
-First click manage apps.
-
-- Click Browse more apps.
+click manage apps > Browse more apps
 
 - Search for Linux apps.
 
 - Install [Splunk Ad-on for Unix and Linux.](Images/Splunk_apps.png)
 
-- Than click home.
+Click home > settings > Forwaard and receiving
 
-Second, click settings drop down.
-
-- Click Forward and receiving.
-
-- Click [Configure receiving](Images/Configure_receiving.png)
-
-- Click New Recieving Port and enter port 9997.
+- Click [Configure receiving](Images/Configure_receiving.png) > New Recieving Port and enter port 9997.
 
 ## Splunk Universal Forwarder Installation
 #
-Navigate to the /opt directory on the VM Splunk Universal Forwarder is to be installed.
+_Note: Navigate to the /opt directory on the VM Splunk Universal Forwarder is to be installed.
 
 *Download*
 -
@@ -192,15 +184,11 @@ Sixth run `sudo ./splunk restart`
 #
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check it is running, and monitoring the Virtual Network.
 
-First, click settings drop down.
+Click settings > [Forwarder management.](Images/Forwarder_Management.png)
 
-- Click [Forwarder management.](Images/Forwarder_Management.png)
+Navigate back to [Splunk Enterprise home.](Images/Splunk_Enterprise_Home.png)
 
-Second, navigate back to [Splunk Enterprise home.](Images/Splunk_Enterprise_Home.png)
-
-- Click Search & Reporting
-
-- Than click [Data Summary.](Images/Data_Summary.png)
+Click Search & Reporting > [Data Summary.](Images/Data_Summary.png)
 
 #
 ***If you need to troubleshoot connection.***
