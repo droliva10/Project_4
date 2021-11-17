@@ -1,7 +1,7 @@
 
 # Install and Configure Splunk Enterprise.
 #
-![Logo](Images/Logo_1.png)
+![Logo](Images/Logo_2.png)
 
 The files in this repository were used to configure the network depicted in the diagram.
 
