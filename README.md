@@ -29,19 +29,14 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 ## Table of Contents
 
-1. [Topology](#topology)
-1. [Access](#access)
+1. [Description of Topology](#topology)
+1. [Access Policies](#access)
 1. [Splunk Enterprise Installation](#splunk)
-
--Azure Network Security Group
-
--Splunk Settings
-
--Splunk Universal Forwarder Installation
-
--Data Verification
-
--Target Machines
+1. [Azure Network Security Group](#azure)
+1. [Splunk Settings](#splunk)
+1. [Splunk Universal Forwarder Installation](#splunk)
+1. [Data Verification](#data)
+1. [Target Machines](#target)
 
 ----
 
@@ -67,7 +62,7 @@ The configuration details of each machine may be found below.
 ---
 
 ## Access Policies
-#
+
 The machines on the internal network are not exposed to the public Internet. 
 Only the Jump-box machine can accept connections from the internet. Access to this machine is only allowed from the following IP address.
 -  Whitelisted (Personal IP address)
@@ -84,8 +79,10 @@ A summary of the access policies in place can be found in the table below.
 | Spock  | No                  | 10.0.0.0-254         |
 | Scotty | No                  | 10.1.0.0-254         |
 
+---
+
 ## Splunk Enterprise Installation
-#
+
 _Note: Navigate to the /opt directory on the VM that Splunk Enterprise instance is to be installed._
 
 *Download*
@@ -126,15 +123,19 @@ Run `sudo vi /opt/splunk/etc/system/local/web.conf`
 	
 Run `sudo ./splunk restart`
 
+---
+
 ## Azure Network Security Group
-#
+
 Add inbound security rules to Splunk Enterprise VM.
 Allow [Port 8000 and 8089](Images/Azure_NSG_Allow_Port_8000_8089.PNG)
 
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check it is running and operational.
 
+---
+
 ## Splunk Settings
-#
+
 click manage apps > Browse more apps
 
 - Search for Linux apps.
@@ -145,8 +146,10 @@ Click home > settings > Forwaard and receiving
 
 - Click [Configure receiving](Images/Configure_receiving.png) > New Recieving Port and enter port 9997.
 
+---
+
 ## Splunk Universal Forwarder Installation
-#
+
 _Note: Navigate to the /opt directory on the VM Splunk Universal Forwarder is to be installed._
 
 *Download*
@@ -181,8 +184,10 @@ Sixth run `sudo ./splunk restart`
 
 ### [***Add Monitor***](Images/Add_Monitor.png)
 
+---
+
 ## Data Verification
-#
+
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check it is running, and monitoring the Virtual Network.
 
 Click settings > [Forwarder management.](Images/Forwarder_Management.png)
@@ -215,8 +220,10 @@ Run `sudo ./splunk enable boot-start`
 
 [Splunk Enable](Images/Forwarder_Enable.png)
 
+---
+
 ## Target Machines
-#
+
 The Splunk Universal Forwarder is installed and configured to monitor the following machines:
 - 10.0.0.4
 - 10.0.0.5
