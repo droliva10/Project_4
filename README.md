@@ -40,7 +40,7 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 ----
 
-## Description of the Topology
+## Topology
 The main purpose of this network is to have a secure environment and monitor a Ruby On Rails application.
 
 - **Containerization was used to create a control node. This serves the purposed of security, elasticity, and scalability.**
