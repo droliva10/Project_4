@@ -31,12 +31,12 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 1. [Topology](#topology)
 1. [Access](#access)
-1. [Installation](#installation)
+1. [Splunk](#splunk)
 1. [Azure](#azure)
-1. [Splunk Settings](#splunk)
-1. [Splunk Universal Forwarder Installation](#splunk)
-1. [Data Verification](#data)
-1. [Target Machines](#target)
+1. [Settings](#settings)
+1. [Forwarder](#forwarder)
+1. [Data](#data)
+1. [Targets](#targets)
 
 ----
 
@@ -79,7 +79,7 @@ A summary of the access policies in place can be found in the table below.
 
 ---
 
-## Installation
+## Splunk
 _Note: Navigate to the /opt directory on the VM that Splunk Enterprise instance is to be installed._
 
 **Download**
@@ -131,7 +131,7 @@ Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise
 
 ---
 
-## Splunk Settings
+## Settings
 
 click manage apps > Browse more apps
 
@@ -145,8 +145,7 @@ Click home > settings > Forwaard and receiving
 
 ---
 
-## Splunk Universal Forwarder Installation
-
+## Forwarder
 _Note: Navigate to the /opt directory on the VM Splunk Universal Forwarder is to be installed._
 
 *Download*
@@ -183,7 +182,7 @@ Sixth run `sudo ./splunk restart`
 
 ---
 
-## Data Verification
+## Data
 
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check it is running, and monitoring the Virtual Network.
 
@@ -219,7 +218,7 @@ Run `sudo ./splunk enable boot-start`
 
 ---
 
-## Target Machines
+## Targets
 
 The Splunk Universal Forwarder is installed and configured to monitor the following machines:
 - 10.0.0.4
