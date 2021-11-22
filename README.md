@@ -30,9 +30,9 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 ## Table of Contents
 
 1. [Topology](#topology)
-1. [Access Policies](#access)
-1. [Splunk Enterprise Installation](#splunk)
-1. [Azure Network Security Group](#azure)
+1. [Access](#access)
+1. [Installation](#installation)
+1. [Azure](#azure)
 1. [Splunk Settings](#splunk)
 1. [Splunk Universal Forwarder Installation](#splunk)
 1. [Data Verification](#data)
@@ -60,7 +60,7 @@ The configuration details of each machine may be found below.
 
 ---
 
-## Access Policies
+## Access
 The machines on the internal network are not exposed to the public Internet. 
 Only the Jump-box machine can accept connections from the internet. Access to this machine is only allowed from the following IP address.
 -  Whitelisted (Personal IP address)
@@ -79,7 +79,7 @@ A summary of the access policies in place can be found in the table below.
 
 ---
 
-## Splunk Enterprise Installation
+## Installation
 _Note: Navigate to the /opt directory on the VM that Splunk Enterprise instance is to be installed._
 
 **Download**
@@ -122,7 +122,7 @@ Run `sudo ./splunk restart`
 
 ---
 
-## Azure Network Security Group
+## Azure
 
 Add inbound security rules to Splunk Enterprise VM.
 Allow [Port 8000 and 8089](Images/Azure_NSG_Allow_Port_8000_8089.PNG)
