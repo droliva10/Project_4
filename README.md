@@ -31,7 +31,7 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 1. [Topology](#topology)
 
--Access Policies
+1. [Access Policies](#access policies)
 
 -Splunk Enterprise Installation
 
