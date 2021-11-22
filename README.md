@@ -30,10 +30,8 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 ## Table of Contents
 
 1. [Topology](#topology)
-
 1. [Access](#access)
-
--Splunk Enterprise Installation
+1. [Splunk Enterprise Installation](#splunk)
 
 -Azure Network Security Group
 
