@@ -136,6 +136,7 @@ Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise
 
 ## Settings
 Configure settings in Splunk Enterprise.
+
 click manage apps > Browse more apps
 
 - Search for Linux apps.
@@ -150,6 +151,7 @@ Click home > settings > Forwaard and receiving
 
 ## Forwarder
 Splunk Universal Forwarder Installation.
+
 _Note: Navigate to the /opt directory on the VM Splunk Universal Forwarder is to be installed._
 
 ### Download
@@ -188,6 +190,7 @@ Sixth run `sudo ./splunk restart`
 
 ## Data
 Verify data is being sent to indexer.
+
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check it is running, and monitoring the Virtual Network.
 
 Click settings > [Forwarder management.](Images/Forwarder_Management.png)
