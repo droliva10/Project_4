@@ -27,9 +27,9 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 ----
 
-This document contains the following details:
+Table of Contents
 
-[Description of the Topology](#description of the topology)
+1. [Description of the Topology](#description of the topology)
 
 -Access Policies
 
