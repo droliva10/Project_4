@@ -102,8 +102,8 @@ Run `sudo cd /opt/splunk/bin`
 
 Run `sudo ./splunk start --accept-licences`
 	
-*File Configuration*
--
+### File Configuration
+
 Edit [splunk-launch.conf](Images/Splunk_Launch.png) file to bind IP Address.
 
 Run `sudo vi ../etc/splunk-launch.conf`
