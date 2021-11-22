@@ -86,41 +86,41 @@ _Note: Navigate to the /opt directory on the VM that Splunk Enterprise instance 
 
 ### Download
 
-Run `sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/splunk/releases/8.2.3/linux/splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
+`sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/splunk/releases/8.2.3/linux/splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
 
 ### [***Splunk Enterprise***](Images/Splunk_Enterprise.png)
 
 ### Extract
 
-Run `sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
+`sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 ### [***Splunk Enterprise Extraction***](Images/Splunk_Enterprise_Extract.png)
 
 ### Commands
 
-Run `sudo cd /opt/splunk/bin`
+`sudo cd /opt/splunk/bin`
 
-Run `sudo ./splunk start --accept-licences`
+`sudo ./splunk start --accept-licences`
 	
 ### File Configuration
 
 Edit [splunk-launch.conf](Images/Splunk_Launch.png) file to bind IP Address.
 
-Run `sudo vi ../etc/splunk-launch.conf`
+`sudo vi ../etc/splunk-launch.conf`
 
 - Copy web.conf file. 
 
-Run `sudo cp /opt/splunk/etc/system/default/web.conf /opt/splunk/etc/system/local`
+`sudo cp /opt/splunk/etc/system/default/web.conf /opt/splunk/etc/system/local`
 
 - Edit [web.conf](Images/Web_File.png)
 
-Run `sudo vi /opt/splunk/etc/system/local/web.conf`
+`sudo vi /opt/splunk/etc/system/local/web.conf`
 
 - Uncomment *mgmtHostPort=121.0.0.1:8089*
 
 - Edit IP address, it should be the same IP Address as in splunk-launch.conf file.
 	
-Run `sudo ./splunk restart`
+`sudo ./splunk restart`
 
 ---
 
@@ -156,29 +156,28 @@ _Note: Navigate to the /opt directory on the VM Splunk Universal Forwarder is to
 
 ### Download
 
-Run `sudo wget -O splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/universalforwarder/releases/8.2.3/linux/splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
+`sudo wget -O splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/universalforwarder/releases/8.2.3/linux/splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
 
 ### [***Splunk Universal Forwarder***](Images/Splunk_Universal_Forwarder.png)
 
 *Extract*
 -
-Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
+`sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 ### [***Splunk Universal Forwarder Extraction***](Images/Splunk_Universal_Forwarder_Extraction.png)
 
 ### Commands
 
-First run `sudo cd /opt/splunkforwarder/bin`
- 
-Second run `sudo ./splunk start --accept-licence`
+`sudo cd /opt/splunkforwarder/bin`
+`sudo ./splunk start --accept-licence`
 
-Third run `sudo ./splunk add forward-server IP Address:9997`
+`sudo ./splunk add forward-server IP Address:9997`
 
-Forth run `sudo ./splunk set deploy-poll IP Address:8089`
+`sudo ./splunk set deploy-poll IP Address:8089`
 
-Fifth run `sudo .splunk add monitor /var/log/`
+`sudo .splunk add monitor /var/log/`
 
-Sixth run `sudo ./splunk restart`
+`sudo ./splunk restart`
 	
 ### [***Start***](Splunk_Universal_Forwarder_Start.png)
 
