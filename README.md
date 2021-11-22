@@ -125,7 +125,7 @@ Run `sudo ./splunk restart`
 ---
 
 ## Azure
-
+Configure Microsoft Azure Network Security Group
 Add inbound security rules to Splunk Enterprise VM.
 Allow [Port 8000 and 8089](Images/Azure_NSG_Allow_Port_8000_8089.PNG)
 
@@ -134,7 +134,7 @@ Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise
 ---
 
 ## Settings
-
+Configure settings in Splunk Enterprise.
 click manage apps > Browse more apps
 
 - Search for Linux apps.
@@ -186,7 +186,7 @@ Sixth run `sudo ./splunk restart`
 ---
 
 ## Data
-
+Verify data is being sent to indexer.
 Navigate to the Splunk Enterprise URL [IP Address:8000](Images/Splunk_Enterprise_Home.png) to check it is running, and monitoring the Virtual Network.
 
 Click settings > [Forwarder management.](Images/Forwarder_Management.png)
@@ -222,7 +222,6 @@ Run `sudo ./splunk enable boot-start`
 ---
 
 ## Targets
-
 The Splunk Universal Forwarder is installed and configured to monitor the following machines:
 - 10.0.0.4
 - 10.0.0.5
