@@ -25,11 +25,11 @@ These downloads have been tested and used to generate a live Splunk Enterprise d
 
 ## [Splunk Universal Forwarder](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html)
 
-
+----
 
 This document contains the following details:
 
--Description of the Topology
+[Description of the Topology](#description of the topology)
 
 -Access Policies
 
@@ -44,6 +44,8 @@ This document contains the following details:
 -Data Verification
 
 -Target Machines
+
+----
 
 ## Description of the Topology
 #
