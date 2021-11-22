@@ -16,8 +16,9 @@ The files in this repository were used to configure the network depicted in the 
  - Standard B1ms
  - 1 vCPU
  - 2 GiB RAM
- 
+-
 These downloads have been tested and used to generate a live Splunk Enterprise deployment on Microsoft Azure. They can be used to either recreate the deployment pictured above or variation.
+-
 
 ## [Splunk](https://www.splunk.com/)
 
