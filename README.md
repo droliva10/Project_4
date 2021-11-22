@@ -169,6 +169,7 @@ _Note: Navigate to the /opt directory on the VM Splunk Universal Forwarder is to
 ### Commands
 
 `sudo cd /opt/splunkforwarder/bin`
+
 `sudo ./splunk start --accept-licence`
 
 `sudo ./splunk add forward-server IP Address:9997`
@@ -201,7 +202,7 @@ Click Search & Reporting > [Data Summary.](Images/Data_Summary.png)
 #
 ***If you need to troubleshoot connection.***
 
-Run `sudo ./splunk list forward-server`
+`sudo ./splunk list forward-server`
 
 [list forward-server](Images/List_Forward_Server.png)
 
@@ -212,13 +213,13 @@ Run `sudo ./splunk list forward-server`
 -
 *Splunk Enterprise*
 
-Run `sudo ./splunk enable boot-start`
+`sudo ./splunk enable boot-start`
 
 [Splunk Enable](Images/Splunk_Enable.png)
 
 *Splunk Universal Forwarder*
 
-Run `sudo ./splunk enable boot-start`
+`sudo ./splunk enable boot-start`
 
 [Splunk Enable](Images/Forwarder_Enable.png)
 
