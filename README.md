@@ -19,11 +19,11 @@ The files in this repository were used to configure the network depicted in the 
 #
 These downloads have been tested and used to generate a live Splunk Enterprise deployment on Microsoft Azure. They can be used to either recreate the deployment pictured above or variation.
 
-## [Splunk](https://www.splunk.com/)
+### [Splunk](https://www.splunk.com/)
 
-## [Splunk Enterprise](https://www.splunk.com/en_us/download/splunk-enterprise.html)
+### [Splunk Enterprise](https://www.splunk.com/en_us/download/splunk-enterprise.html)
 
-## [Splunk Universal Forwarder](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html)
+### [Splunk Universal Forwarder](https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html)
 
 ----
 
