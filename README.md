@@ -125,7 +125,8 @@ Run `sudo ./splunk restart`
 ---
 
 ## Azure
-Configure Microsoft Azure Network Security Group
+Configure Microsoft Azure Network Security Group.
+
 Add inbound security rules to Splunk Enterprise VM.
 Allow [Port 8000 and 8089](Images/Azure_NSG_Allow_Port_8000_8089.PNG)
 
