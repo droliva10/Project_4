@@ -85,19 +85,19 @@ Splunk Enterprise instalation.
 _Note: Navigate to the /opt directory on the VM that Splunk Enterprise instance is to be installed._
 
 ### Download
--
+
 Run `sudo wget -O splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/splunk/releases/8.2.3/linux/splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
 
 ### [***Splunk Enterprise***](Images/Splunk_Enterprise.png)
 
-*Extract*
--
+### Extract
+
 Run `sudo dpkg -i splunk-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 ### [***Splunk Enterprise Extraction***](Images/Splunk_Enterprise_Extract.png)
 
-*Commands*
--
+### Commands
+
 Run `sudo cd /opt/splunk/bin`
 
 Run `sudo ./splunk start --accept-licences`
@@ -148,10 +148,11 @@ Click home > settings > Forwaard and receiving
 ---
 
 ## Forwarder
+Splunk Universal Forwarder Installation.
 _Note: Navigate to the /opt directory on the VM Splunk Universal Forwarder is to be installed._
 
-*Download*
--
+### Download
+
 Run `sudo wget -O splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb 'https://download.splunk.com/products/universalforwarder/releases/8.2.3/linux/splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb'`
 
 ### [***Splunk Universal Forwarder***](Images/Splunk_Universal_Forwarder.png)
@@ -162,8 +163,8 @@ Run `sudo dpkg -i splunkforwarder-8.2.3-cd0848707637-linux-2.6-amd64.deb`
 
 ### [***Splunk Universal Forwarder Extraction***](Images/Splunk_Universal_Forwarder_Extraction.png)
 
-*Commands*
--
+### Commands
+
 First run `sudo cd /opt/splunkforwarder/bin`
  
 Second run `sudo ./splunk start --accept-licence`
@@ -204,7 +205,7 @@ Run `sudo ./splunk list forward-server`
 #
 ***Lastly ensure Splunk Enterprise and the Universal Forwarder start on boot.***
 
-*Commands*
+### Commands
 -
 *Splunk Enterprise*
 
